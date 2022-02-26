@@ -8,8 +8,8 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Timeline, TimelineEvent } from '@mailtop/horizontal-timeline';
 import { FaBug, FaRegCalendarCheck, FaRegFileAlt } from 'react-icons/fa';
-import ScrollBar from "react-perfect-scrollbar";
-import "react-perfect-scrollbar/dist/css/styles.css";
+import ScrollBar from 'react-perfect-scrollbar';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 
 const Integrations = (): JSX.Element => {
