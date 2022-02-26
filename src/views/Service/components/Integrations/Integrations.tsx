@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { Component }  from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -8,10 +8,9 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Timeline, TimelineEvent } from '@mailtop/horizontal-timeline';
 import { FaBug, FaRegCalendarCheck, FaRegFileAlt } from 'react-icons/fa';
-const mock = [
+import ScrollBar from "react-perfect-scrollbar";
+import "react-perfect-scrollbar/dist/css/styles.css";
 
-
-];
 
 const Integrations = (): JSX.Element => {
   const theme = useTheme();
