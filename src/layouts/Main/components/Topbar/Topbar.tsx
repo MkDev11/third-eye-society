@@ -10,12 +10,10 @@ interface Props {
   // eslint-disable-next-line @typescript-eslint/ban-types
   onSidebarOpen: () => void;
   pages: {
-    landings: Array<PageItem>;
-    company: Array<PageItem>;
-    account: Array<PageItem>;
-    secondary: Array<PageItem>;
-    blog: Array<PageItem>;
-    portfolio: Array<PageItem>;
+    home: Array<PageItem>;
+    about: Array<PageItem>;
+    team: Array<PageItem>;
+    faq: Array<PageItem>;
   };
   colorInvert?: boolean;
 }
@@ -28,12 +26,10 @@ const Topbar = ({
   const theme = useTheme();
   const { mode } = theme.palette;
   const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
+    home: landingPages,
+    about: secondaryPages,
+    team: companyPages,
+    faq: accountPages,
   } = pages;
 
   return (
@@ -54,17 +50,17 @@ const Topbar = ({
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? 'src/layouts/Main/components/Topbar/img/third-eye.png'
-              : 'src/layouts/Main/components/Topbar/img/third-eye.png'
+              ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/e7f1fc5a-9718-4fc4-3ea0-86115bb64000/public'
+              : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
           }
-          height={1}
-          width={1}
+          height={.5}
+          width={.5}
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
+            title={'Home'}
             id={'landing-pages'}
             items={landingPages}
             colorInvert={colorInvert}
@@ -72,7 +68,7 @@ const Topbar = ({
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Company'}
+            title={'About'}
             id={'company-pages'}
             items={companyPages}
             colorInvert={colorInvert}
@@ -80,7 +76,7 @@ const Topbar = ({
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Account'}
+            title={'Team'}
             id={'account-pages'}
             items={accountPages}
             colorInvert={colorInvert}
@@ -88,38 +84,23 @@ const Topbar = ({
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Pages'}
+            title={'FAQ'}
             id={'secondary-pages'}
             items={secondaryPages}
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Blog'}
-            id={'blog-pages'}
-            items={blogPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Portfolio'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
+     
         <Box marginLeft={4}>
           <Button
             variant="contained"
             color="primary"
             component="a"
             target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
+            href="./mint"
             size="large"
           >
-            Buy now
+            Mint
           </Button>
         </Box>
       </Box>

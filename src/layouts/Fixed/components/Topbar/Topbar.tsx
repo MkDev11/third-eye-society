@@ -54,14 +54,14 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             href="/home"
             color="text.primary"
           >
-            Pages
+            About
           </Link>
         </Box>
         <Box marginLeft={3}>
           <Link
             underline="none"
             component="a"
-            href="/blocks"
+            href="src/views/Service/components/About"
             color="text.primary"
           >
             Components

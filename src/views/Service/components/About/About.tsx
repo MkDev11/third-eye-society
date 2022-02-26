@@ -18,7 +18,7 @@ const Hero = (): JSX.Element => {
     <Box>
       <Box marginBottom={2}>
         <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
-          Organic company growth with{' '}
+        Third Eye{' '}
           <Typography
             component={'span'}
             variant={'inherit'}
@@ -30,13 +30,12 @@ const Hero = (): JSX.Element => {
               )} 0%)`,
             }}
           >
-            targeted leads
+            Society
           </Typography>
         </Typography>
       </Box>
       <Typography variant="h6" component="p" color={'text.secondary'}>
-        Our mission is to spread education that is easy accessible and everyone
-        can learn.
+      Opening the door to wealth and wisdom for all Apes.
       </Typography>
       <Box
         display="flex"
@@ -45,8 +44,8 @@ const Hero = (): JSX.Element => {
         marginTop={4}
       >
         {[
-          'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
+          'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5b473795-8dfe-4d3e-7109-180e889e7900/public',
+          'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/01d3fa30-c2fa-4cb4-0e5a-b69a76e55e00/public',
           'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
           'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
         ].map((item, i) => (
@@ -121,19 +120,18 @@ const Hero = (): JSX.Element => {
                 }}
               >
                 <Box
-                  component={LazyLoadImage}
-                  effect="blur"
-                  src="https://assets.maccarianagency.com/screenshots/dashboard.png"
-                  alt="Image Description"
-                  width={1}
-                  height={1}
-                  sx={{
-                    objectFit: 'cover',
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0.7)'
-                        : 'none',
-                  }}
+                  component={'iframe'}
+                  title="video"
+                  width="100%"
+                  height="100%"
+                  minHeight={250}
+                  src="https://www.youtube.com/embed/0dWQhPuuG-k?autoplay=1&controls=0&loop=1playlist=PLxK1IGEFZi6OkFroD0THpEHcM1BZX4TFG;"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                  boxShadow={4}
+                  borderRadius={2}
+                 
+                
                 />
               </Box>
             </Box>

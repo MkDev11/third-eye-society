@@ -10,9 +10,9 @@ import Typography from '@mui/material/Typography';
 
 const mock = [
   {
-    title: 'Themeable',
+    title: 'E-commerce',
     subtitle:
-      'Customize any part of our components to match your design needs.',
+      'Amazon store to hodlers...etc ',
     icon: (
       <svg
         height={24}
@@ -32,9 +32,9 @@ const mock = [
     ),
   },
   {
-    title: 'Light and dark UI',
+    title: 'DAO and Community Wallet',
     subtitle:
-      'Optimized for multiple color modes. Use light or dark, your choice.',
+      '',
     icon: (
       <svg
         height={24}
@@ -54,9 +54,9 @@ const mock = [
     ),
   },
   {
-    title: 'Composable',
+    title: 'Buisness & Personal Development',
     subtitle:
-      'Designed with composition in mind. Compose new components with ease.',
+      'TES Holders gain access to a network of industries mentors, Along with credit monitoring services',
     icon: (
       <svg
         height={24}
@@ -76,7 +76,7 @@ const mock = [
     ),
   },
   {
-    title: 'Developer experience',
+    title: 'TES Token',
     subtitle:
       'Guaranteed to boost your productivity when building your app or website.',
     icon: (
@@ -98,7 +98,7 @@ const mock = [
     ),
   },
   {
-    title: 'Continuous updates',
+    title: 'Metaverse Real estate ',
     subtitle: 'We continually deploy improvements and new updates to theFront.',
     icon: (
       <svg
@@ -119,9 +119,9 @@ const mock = [
     ),
   },
   {
-    title: 'Free support',
+    title: 'Exclusive Merchidaise',
     subtitle:
-      '6 months of free technical support to help you build your website faster.',
+      'All TES Holders will get access to IRL merch along with future digital collectibles',
     icon: (
       <svg
         height={24}
@@ -156,7 +156,7 @@ const Advantages = (): JSX.Element => {
           color={'secondary.main'}
           align={'center'}
         >
-          Advantages
+          About Us
         </Typography>
         <Typography
           variant={'h4'}
@@ -164,9 +164,9 @@ const Advantages = (): JSX.Element => {
           align={'center'}
           sx={{ fontWeight: 700 }}
         >
-          The powerful and flexible theme
+          Our mission is to create an ecosystem to breed wealth and success for all of our community.
           <br />
-          for all kinds of businesses
+          We strive to bring real life value such as Automated E-commerce stores, merch line, as well as access to a high level network of apes around the world!
         </Typography>
         <Typography
           variant={'h6'}
@@ -174,10 +174,11 @@ const Advantages = (): JSX.Element => {
           color={'text.secondary'}
           align={'center'}
         >
-          Build a beautiful, modern website with flexible, fully customizable,
-          atomic MUI components.
+         
           <br />
-          An experience you'd expect from a design system.
+          we offer a ton of metaverse value such as staking, P2E gaming, and land purchase in Sandbox.
+          <br /> 
+          After mint we will be creating home bases in other metaverses such as NFT Worlds and more.
         </Typography>
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Button
@@ -205,7 +206,7 @@ const Advantages = (): JSX.Element => {
               </svg>
             }
           >
-            Purchase now
+            Mint
           </Button>
         </Box>
       </Box>

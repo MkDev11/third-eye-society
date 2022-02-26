@@ -56,15 +56,15 @@ const VideoSection = (): JSX.Element => {
                   component={LazyLoadImage}
                   src={
                     theme.palette.mode === 'light'
-                      ? 'https://assets.maccarianagency.com/screenshots/crypto-mobile.png'
-                      : 'https://assets.maccarianagency.com/screenshots/crypto-mobile--dark.png'
+                      ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5ef77d03-5761-427b-3cc3-1975d0d29400/public'
+                      : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5ef77d03-5761-427b-3cc3-1975d0d29400/public'
                   }
                   alt="Image Description"
                   effect="blur"
                   width={1}
                   height={1}
                   sx={{
-                    objectFit: 'cover',
+                    objectFit: 'scale-down',
                     borderRadius: '2.5rem',
                     filter:
                       theme.palette.mode === 'dark'
@@ -87,20 +87,16 @@ const VideoSection = (): JSX.Element => {
                 fontWeight: 700,
               }}
             >
-              Now available on Google Play market and Apple Store
+              See Below for how to Mint a
+               Third Eye Society NFT!
             </Typography>
           </Box>
-          <Box marginBottom={3}>
-            <Typography variant="h6" component="p" color="text.secondary">
-              Don't listen to what they say go and see. Travelling with our app
-              is easy. Join the biggest community of travellers.
-            </Typography>
-          </Box>
+
           <Box
             height={1}
             width={1}
             maxHeight={300}
-            maxWidth={{ xs: '100%', sm: 400 }}
+            maxWidth={{ xs: '400%', sm: 400 }}
             marginTop={3}
           >
             <Box
@@ -109,7 +105,7 @@ const VideoSection = (): JSX.Element => {
               width="100%"
               height="100%"
               minHeight={250}
-              src="https://www.youtube.com/embed/ClIbn_IF31U"
+              src="https://www.youtube.com/embed/D8V8lda-xpM"
               frameBorder="0"
               allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
               boxShadow={4}

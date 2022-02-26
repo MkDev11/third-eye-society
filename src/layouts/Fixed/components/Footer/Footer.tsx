@@ -32,7 +32,7 @@ const Footer = (): JSX.Element => {
               src={
                 mode === 'light'
                   ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                  : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
               }
               height={1}
               width={1}
@@ -50,17 +50,7 @@ const Footer = (): JSX.Element => {
                 Home
               </Link>
             </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/docs/introduction"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Documentation
-              </Link>
-            </Box>
+
             <Box marginTop={1}>
               <Button
                 variant="outlined"
