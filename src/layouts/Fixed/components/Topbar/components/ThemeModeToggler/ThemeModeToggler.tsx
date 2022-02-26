@@ -14,19 +14,19 @@ const ThemeModeToggler = (): JSX.Element => {
       aria-label="Dark mode toggler"
       color={mode === 'light' ? 'primary' : 'secondary'}
       sx={{
-        borderRadius: 2,
+        borderRadius: 1,
         minWidth: 'auto',
-        padding: 1,
+        padding: .5,
         borderColor: alpha(theme.palette.divider, 0.2),
       }}
     >
       {mode === 'light' ? (
         <svg
-          width={24}
-          height={24}
+          width={16}
+          height={16}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 24 24"
+          viewBox="0 0 16 16"
           stroke="currentColor"
         >
           <path
@@ -38,11 +38,11 @@ const ThemeModeToggler = (): JSX.Element => {
         </svg>
       ) : (
         <svg
-          width={24}
-          height={24}
+          width={16}
+          height={16}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 24 24"
+          viewBox="0 0 16 16"
           stroke="currentColor"
         >
           <path

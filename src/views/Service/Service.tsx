@@ -9,9 +9,7 @@ import NoSsr from '@mui/material/NoSsr';
 import {
   About,
   Advantages,
-  Features,
   Integrations,
-  Reviews,
   Team,
   VideoSection,
   Faq,

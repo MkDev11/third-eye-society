@@ -10,9 +10,9 @@ interface Props {
   variant: 'permanent' | 'persistent' | 'temporary' | undefined;
   pages: {
     home: Array<PageItem>;
-    About: Array<PageItem>;
-    Team: Array<PageItem>;
-    Faq: Array<PageItem>;
+    about: Array<PageItem>;
+    team: Array<PageItem>;
+    faq: Array<PageItem>;
   };
 }
 

@@ -45,8 +45,6 @@ const Fixed = ({ children }: Props): JSX.Element => {
           <Topbar onSidebarOpen={handleSidebarOpen} />
         </Container>
       </AppBar>
-
-
       <main>
         <Box height={{ xs: 58, sm: 66, md: 71 }} />
         <Box

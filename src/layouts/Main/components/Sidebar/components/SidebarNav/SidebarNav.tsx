@@ -8,9 +8,9 @@ import NavItem from './components/NavItem';
 interface Props {
   pages: {
     home: Array<PageItem>;
-    About: Array<PageItem>;
-    Team: Array<PageItem>;
-    Faq: Array<PageItem>;
+    about: Array<PageItem>;
+    team: Array<PageItem>;
+    faq: Array<PageItem>;
   };
 }
 
@@ -20,9 +20,9 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
 
   const {
     home: landingPages,
-    About: secondaryPages,
-    Team: companyPages,
-    Faq: accountPages,
+    about: secondaryPages,
+    team: companyPages,
+    faq: accountPages,
    
   } = pages;
 
@@ -59,7 +59,7 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
           <NavItem title={'Team'} items={secondaryPages} />
         </Box>
         <Box>
-          <NavItem title={'Account'} items={accountPages} />
+          <NavItem title={'FAQ'} items={accountPages} />
         </Box>
 
         <Box marginTop={2}>

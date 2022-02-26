@@ -31,8 +31,8 @@ const Footer = (): JSX.Element => {
               component={'img'}
               src={
                 mode === 'light'
-                  ? 'https://drive.google.com/file/d/1JHbDh41jF35Kq8gE7pyXPZm93Y48XxkB/view?usp=sharing'
-                  : 'https://drive.google.com/file/d/1JHbDh41jF35Kq8gE7pyXPZm93Y48XxkB/view?usp=sharing'
+                  ? 'https://thirdeyesociety.s3.amazonaws.com/third-eye.png'
+                  : 'https://thirdeyesociety.s3.amazonaws.com/third-eye.png'
               }
               height={1}
               width={1}

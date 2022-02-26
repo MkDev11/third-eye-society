@@ -1,44 +1,39 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Button from '@mui/material/Button';
+import { alpha, useTheme } from '@mui/material/styles';
+import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
+import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
-import ListItem from '@mui/material/ListItem';
+import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+import Container from 'components/Container';
 
 const mock = [
   {
-    name: 'Clara Bertoletti',
-    title: 'MUI lover',
+    name: 'GMONEY @realgmoneybaby',
+    title: 'Marketing',
+    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+  },
+  {
+    name: 'GHOST',
+    title: 'Marketing',
     avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
   },
   {
-    name: 'Jhon Anderson',
-    title: 'Senior Frontend Developer',
+    name: 'Mukubass',
+    title: 'Developer',
     avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
   },
   {
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
+    name: 'TOXIC',
+    title: 'Head Mod',
     avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
-  },
-  {
-    name: 'Clara Bertoletti',
-    title: 'MUI lover',
-    avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
-  },
-  {
-    name: 'Jhon Anderson',
-    title: 'Senior Frontend Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
-  },
-  {
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
-    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
   },
 ];
 
@@ -46,84 +41,104 @@ const Reviews = (): JSX.Element => {
   const theme = useTheme();
 
   return (
-    <Box>
-      <Box marginBottom={4}>
-        <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'secondary'}
-          align={'center'}
-        >
-          Team
-        </Typography>
-        <Typography
-          variant="h4"
-          align={'center'}
-          data-aos={'fade-up'}
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            marginTop: theme.spacing(1),
-          }}
-        >
-          Why work with us
-        </Typography>
-        <Typography
-          variant="h6"
-          align={'center'}
-          color={'text.secondary'}
-          data-aos={'fade-up'}
-        >
-          We are a small agency of talented designers & developers.
-        </Typography>
-        <Box marginTop={2} display={'flex'} justifyContent={'center'}>
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            startIcon={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                width={20}
-                height={20}
-              >
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
-            }
+    <Container
+      sx={{
+        position: 'relative',
+        '&::after': {
+          position: 'absolute',
+          content: '""',
+          width: '30%',
+          height: '50%',
+          zIndex: 1,
+          top: 0,
+          right: 0,
+          backgroundSize: '18px 18px',
+          backgroundImage: `radial-gradient(${alpha(
+            theme.palette.primary.dark,
+            0.4,
+          )} 20%, transparent 20%)`,
+          opacity: 0.2,
+        },
+      }}
+    >
+      <Box zIndex={2} position={'relative'}>
+        <Box marginBottom={4}>
+          <Typography
+            sx={{
+              textTransform: 'uppercase',
+            }}
+            gutterBottom
+            color={'text.secondary'}
+            align={'center'}
+            fontWeight={700}
           >
-            Contact us
-          </Button>
+            Our Team
+          </Typography>
+          <Typography
+            variant={'h4'}
+            gutterBottom
+            align={'center'}
+            sx={{ fontWeight: 700 }}
+          >
+            The most importent speakers
+          </Typography>
+          <Typography
+            variant={'h6'}
+            component={'p'}
+            color={'text.secondary'}
+            align={'center'}
+          >
+            There arge many variations ohf passages of sorem gpsum ilable,
+            <br />
+            but the majority have suffered alteration in.
+          </Typography>
+          <Box marginTop={2} display={'flex'} justifyContent={'center'}>
+            <Button color={'primary'} variant={'contained'} size={'large'}>
+              View all
+            </Button>
+          </Box>
         </Box>
-      </Box>
-      <Grid container spacing={2}>
-        {mock.map((item, i) => (
-          <Grid item xs={12} sm={6} md={4} key={i}>
-            <Box sx={{ paddingBottom: 2 }}>
-              <ListItem component="div" disableGutters sx={{ padding: 0 }}>
-                <ListItemAvatar sx={{ marginRight: 3 }}>
-                  <Avatar
-                    src={item.avatar}
-                    variant={'rounded'}
-                    sx={{ width: 100, height: 100, borderRadius: 2 }}
-                  />
-                </ListItemAvatar>
-                <ListItemText
-                  sx={{ margin: 0 }}
-                  primary={item.name}
-                  secondary={item.title}
+        <Grid container spacing={2}>
+          {mock.map((item, i) => (
+            <Grid item xs={12} sm={6} md={3} key={i}>
+              <Box component={Card} boxShadow={0} bgcolor={'transparent'}>
+                <Box
+                  component={CardMedia}
+                  borderRadius={2}
+                  width={1}
+                  height={1}
+                  minHeight={320}
+                  image={item.avatar}
                 />
-              </ListItem>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+                <CardContent>
+                  <ListItemText
+                    primary={item.name}
+                    secondary={item.title}
+                    primaryTypographyProps={{ fontWeight: 700 }}
+                  />
+                  <Box marginTop={1}>
+                    <IconButton
+                      aria-label="facebook"
+                      size={'small'}
+                      color={'primary'}
+                    >
+                      <FacebookIcon />
+                    </IconButton>
+                    <IconButton
+                      aria-label="twitter"
+                      size={'small'}
+                      color={'primary'}
+                    >
+                      <TwitterIcon />
+                    </IconButton>
+                  </Box>
+                </CardContent>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </Container>
   );
 };
 
