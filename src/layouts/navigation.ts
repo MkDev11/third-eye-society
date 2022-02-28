@@ -8,15 +8,11 @@ const pages = {
   team: [
     {
       title: 'Benefits',
-      href: 'Advantages',
+      href: './advantages',
     },
     {
       title: 'RoadMap',
       href: '/help-center-article',
-    },
-    {
-      title: 'Amazon Store',
-      href: '/faq',
     },
   ],
   about: [

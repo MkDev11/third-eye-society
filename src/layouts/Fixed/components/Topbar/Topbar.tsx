@@ -34,8 +34,8 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
           component={'img'}
           src={
             mode === 'light'
-              ? 'https://drive.google.com/file/d/1JHbDh41jF35Kq8gE7pyXPZm93Y48XxkB/view?usp=sharing'
-              : 'https://drive.google.com/file/d/1JHbDh41jF35Kq8gE7pyXPZm93Y48XxkB/view?usp=sharing'
+              ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/86f01e4a-c777-4f7c-ac73-d6d9ac4ba900/public'
+              : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
           }
           height={1}
           width={1}
@@ -86,7 +86,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             color="primary"
             component="a"
             target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
+            href="https://mint.thirdeyesociety.io"
             size="large"
           >
             Mint

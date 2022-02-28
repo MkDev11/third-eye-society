@@ -68,7 +68,7 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'60vh'}
         display={'flex'}
         alignItems={'center'}
         id="agency__portfolio-item--js-scroll"
@@ -89,7 +89,7 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'85vh'}
         display={'flex'}
         alignItems={'center'}
         id="agency__portfolio-item--js-scroll"
@@ -128,9 +128,10 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'60vh'}
         display={'flex'}
-        alignItems={'center'}
+        alignItems={'top'}
+        id="agency__portfolio-item--js-scroll"
       >
         <Box
           className={'jarallax-img'}

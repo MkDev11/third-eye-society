@@ -18,22 +18,29 @@ const mock = [
   {
     name: 'GMONEY @realgmoneybaby',
     title: 'Marketing',
-    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/bdab0a0d-43c1-40aa-521b-4b4386058400/public',
   },
   {
     name: 'GHOST',
     title: 'Marketing',
-    avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5ec0b2ea-f704-4531-6704-e2c547aedf00/public',
   },
   {
     name: 'Mukubass',
     title: 'Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/3df71f08-9905-4a89-a06f-49ba7a2bd600/public',
+    href: 'https://twitter.com/mukubass'
   },
   {
     name: 'TOXIC',
     title: 'Head Mod',
-    avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/f85fb13e-9725-4cb4-6ba6-604d313b0a00/public',
+  },
+  {
+    name: 'Kacey',
+    title: 'Community Manager',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/4ae580b3-be22-49d5-0069-18cd76e9df00/public',
+    
   },
 ];
 
@@ -45,7 +52,7 @@ const Reviews = (): JSX.Element => {
       sx={{
         position: 'relative',
         '&::after': {
-          position: 'absolute',
+          position: 'relative',
           content: '""',
           width: '30%',
           height: '50%',
@@ -80,7 +87,7 @@ const Reviews = (): JSX.Element => {
             align={'center'}
             sx={{ fontWeight: 700 }}
           >
-            The most importent speakers
+            Our Motto is 
           </Typography>
           <Typography
             variant={'h6'}
@@ -88,15 +95,11 @@ const Reviews = (): JSX.Element => {
             color={'text.secondary'}
             align={'center'}
           >
-            There arge many variations ohf passages of sorem gpsum ilable,
+            Execute over promising 
             <br />
-            but the majority have suffered alteration in.
+
           </Typography>
-          <Box marginTop={2} display={'flex'} justifyContent={'center'}>
-            <Button color={'primary'} variant={'contained'} size={'large'}>
-              View all
-            </Button>
-          </Box>
+
         </Box>
         <Grid container spacing={2}>
           {mock.map((item, i) => (
@@ -114,16 +117,11 @@ const Reviews = (): JSX.Element => {
                   <ListItemText
                     primary={item.name}
                     secondary={item.title}
+
                     primaryTypographyProps={{ fontWeight: 700 }}
                   />
                   <Box marginTop={1}>
-                    <IconButton
-                      aria-label="facebook"
-                      size={'small'}
-                      color={'primary'}
-                    >
-                      <FacebookIcon />
-                    </IconButton>
+
                     <IconButton
                       aria-label="twitter"
                       size={'small'}

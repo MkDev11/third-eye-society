@@ -12,7 +12,7 @@ const mock = [
   {
     title: 'E-commerce',
     subtitle:
-      'Amazon store to hodlers...etc ',
+      'E Commerce. This community seeks to provide financial freedom for all members. We are excited to be handling all services in house. all holders recieve 50% off retail cost of Automated Amazon E-com stores. We will be giving away 10 start-ups free of cost thru our launch. These winners will be drawn randomly by token number',
     icon: (
       <svg
         height={24}
@@ -34,7 +34,7 @@ const mock = [
   {
     title: 'DAO and Community Wallet',
     subtitle:
-      '',
+      'We will be moving 20% of mint profits into a community Wallet to be used for financing e-commerce start ups, event planning, and further, giveaways',
     icon: (
       <svg
         height={24}
@@ -76,9 +76,9 @@ const mock = [
     ),
   },
   {
-    title: 'TES Token',
+    title: '$TES Token',
     subtitle:
-      'Guaranteed to boost your productivity when building your app or website.',
+      'We are continuing development of our $TES token unique to the community. This token will be earned by holding a TES NFT. It can be used for future NFT drops, Merchandise, Metaverse assets, or for additional utilities such as evolution of your apes in phase 2 ',
     icon: (
       <svg
         height={24}
@@ -99,7 +99,7 @@ const mock = [
   },
   {
     title: 'Metaverse Real estate ',
-    subtitle: 'We continually deploy improvements and new updates to theFront.',
+    subtitle: 'Third Eye Society has already partnered with WeedPunks project to purchase a plot in Sandbox.',
     icon: (
       <svg
         height={24}
@@ -159,52 +159,44 @@ const Advantages = (): JSX.Element => {
           About Us
         </Typography>
         <Typography
-          variant={'h4'}
+          variant={'h3'}
           gutterBottom
           align={'center'}
           sx={{ fontWeight: 700 }}
         >
           Our mission is to create an ecosystem to breed wealth and success for all of our community.
           <br />
+        </Typography>
+        <Typography
+          variant={'h4'}
+          gutterBottom
+          align={'center'}
+          sx={{ fontWeight: 500 }}
+        >
+
           We strive to bring real life value such as Automated E-commerce stores, merch line, as well as access to a high level network of apes around the world!
         </Typography>
         <Typography
           variant={'h6'}
           component={'p'}
-          color={'text.secondary'}
+          color={'Orange'}
           align={'center'}
         >
          
           <br />
-          we offer a ton of metaverse value such as staking, P2E gaming, and land purchase in Sandbox.
+          We offer metaverse value such as staking, P2E gaming, and land purchase in Sandbox.
           <br /> 
           After mint we will be creating home bases in other metaverses such as NFT Worlds and more.
         </Typography>
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Button
             component={'a'}
-            href={'https://mui.com/store/items/the-front-landing-page/'}
+            href={'https://mint.thirdeyesociety.io'}
             target={'_blank'}
             variant="contained"
             color="primary"
             size="large"
-            endIcon={
-              <svg
-                width={16}
-                height={16}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            }
+            
           >
             Mint
           </Button>

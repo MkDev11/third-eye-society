@@ -14,31 +14,37 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 
 const Integrations = (): JSX.Element => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const isMd = useMediaQuery(theme.breakpoints.up('xs'), {
     defaultMatches: true,
   });
   return (
 
     <Box>
+      <Grid container spacing={-500}></Grid>
       <Typography
-        variant={'h3'}
-        color={'primary'}
-        sx={{ fontWeight: 700 }}
+        variant={'h2'}
+        color={'Navy'}
+        sx={{ fontWeight: 700, height: -700}}
+       
       >
         RoadMap
       </Typography>
  
-      <Typography component={'p'} color={'text.secondary'}>
-        Loved by business and individuals across the globe.
+      <Typography component={'h2'} variant={'h5'} color={'text.secondary'}>
+        Phase 1
       </Typography>
     
     
       <Box>
-        <Grid container spacing={-200}>
-          <Grid item container alignItems={'space-between'} xs={15} md={100}>
-            <Divider sx={{ width: 2 }} />
+        <Grid container spacing={-400} position={'relative'} height={70}>
+          <Grid item container alignItems={'space-between'} xs={100} md={100}>
+            <Divider sx={{ width: 4 }} />
+            <Divider sx={{ height: 20 }} />
             <Timeline minEvents="5" placeholder>
+              
               <TimelineEvent
+              
+                color='PaleGreen'
                 icon={FaRegFileAlt}
                 title='Digital Collectible Launch'
                 subtitle='03/03/2022 07:00 PM EST'
@@ -48,19 +54,39 @@ const Integrations = (): JSX.Element => {
                 }}
               />
               <TimelineEvent
-                color='#87a2c7'
+                color='Tomato'
                 icon={FaRegCalendarCheck}
                 title='$TES Token Launch'
-                subtitle='03/09/2022 09:51'
+                subtitle='$TES Token Airdropped to holders'
               />
               <TimelineEvent
-                color='#9c2919'
+                color='Tomato'
                 icon={FaBug}
-                title='Erro'
-                subtitle='26/03/2019 09:51'
+                title='Exclusive Merch Lauch to Holders'
+                
                 action={{
-                  label: 'Ver detalhes...',
+                  label: 'Store coming soon',
                   onClick: () => window.alert('Erro!')
+                }}
+              />
+              <TimelineEvent
+                color='Tomato'
+                icon={FaBug}
+                title='Metaverse Land Purchase'
+                subtitle='at 50% sold we will make a purchase in NFT Worlds'
+                action={{
+                  label: 'World in NFT Worlds and Sandbox',
+                  onClick: () => window.alert('Coming Soon')
+                }}
+              />
+              <TimelineEvent
+                color='Tomato'
+                icon={FaBug}
+                title='Funding Community Wallet and DAO'
+                subtitle='at 100% sold we will denotate 30ETH to our '
+                action={{
+                  label: 'Multisig Community Wallet',
+                  onClick: () => window.alert('Coming soon')
                 }}
               />
             </Timeline>

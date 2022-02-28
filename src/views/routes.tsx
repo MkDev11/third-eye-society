@@ -6,6 +6,11 @@ import {
   NotFoundCover as NotFoundCoverView,
 } from 'views';
 
+import {
+  Advantages as AdvantagesView,
+} from 'views/Service/components/';
+
+
 const routes = [
   {
     path: '/',
@@ -18,6 +23,11 @@ const routes = [
   {
     path: '/not-found-cover',
     renderer: (params = {}): JSX.Element => <NotFoundCoverView {...params} />,
+  },
+
+  {
+    path: '/',
+    renderer: (params = {}): JSX.Element => <AdvantagesView {...params} />,
   },
 ];
 

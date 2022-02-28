@@ -40,8 +40,8 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
             component={'img'}
             src={
               mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/86f01e4a-c777-4f7c-ac73-d6d9ac4ba900/public'
+                : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
             }
             height={1}
             width={1}
@@ -68,24 +68,12 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
             variant="outlined"
             fullWidth
             component="a"
-            href="/docs/introduction"
+            href="https://mint.thirdeyesociety.io"
           >
-            Documentation
+            Mint
           </Button>
         </Box>
-        <Box marginTop={1}>
-          <Button
-            size={'large'}
-            variant="contained"
-            color="primary"
-            fullWidth
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-          >
-            Purchase now
-          </Button>
-        </Box>
+        
       </Box>
     </Box>
   );

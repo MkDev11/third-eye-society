@@ -120,13 +120,16 @@ const NotFoundCover = (): JSX.Element => {
                   >
                     <Box
                       sx={{
+                        right: 50,
                         height: { xs: 'auto', md: 1 },
                         '& img': {
-                          objectFit: 'cover',
+                          objectFit: 'fit',
+                        
                         },
                         '& .lazy-load-image-loaded': {
                           height: 1,
                           width: 1,
+                          
                         },
                       }}
                     >
@@ -134,13 +137,15 @@ const NotFoundCover = (): JSX.Element => {
                         component={LazyLoadImage}
                         effect="blur"
                         src={
-                          'https://assets.maccarianagency.com/backgrounds/img23.jpg'
+                          'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/cd319cc0-4831-455c-3739-7389a04b1c00/public'
                         }
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}
                         maxWidth={1}
+
                         sx={{
+                        
                           filter:
                             theme.palette.mode === 'dark'
                               ? 'brightness(0.7)'

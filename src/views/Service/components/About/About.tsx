@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
+import Link from '@mui/material/Link';
+import { Button, buttonClasses } from '@mui/material';
 
 const Hero = (): JSX.Element => {
   const theme = useTheme();
@@ -14,10 +16,10 @@ const Hero = (): JSX.Element => {
     defaultMatches: true,
   });
 
-  const LeftSide = () => (
+  const TopSide = () => (
     <Box>
-      <Box marginBottom={2}>
-        <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
+      <Box marginBottom={2} marginTop={2}>
+        <Typography component={'span'} variant="h1" sx={{ fontWeight: 600, verticalAlign:'Center' }}>
         Third Eye{' '}
           <Typography
             component={'span'}
@@ -41,13 +43,12 @@ const Hero = (): JSX.Element => {
         display="flex"
         flexWrap="wrap"
         justifyContent={'flex-start'}
-        marginTop={4}
+        marginTop={2}
       >
         {[
           'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5b473795-8dfe-4d3e-7109-180e889e7900/public',
           'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/01d3fa30-c2fa-4cb4-0e5a-b69a76e55e00/public',
-          'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
+
         ].map((item, i) => (
           <Box maxWidth={70} marginTop={2} marginRight={4} key={i}>
             <Box
@@ -56,13 +57,17 @@ const Hero = (): JSX.Element => {
               width={1}
               src={item}
               alt="..."
+            
               sx={{
+                
                 filter:
                   theme.palette.mode === 'dark'
                     ? 'brightness(0) invert(0.7)'
                     : 'contrast(0) brightness(0)',
+                
               }}
             />
+            
           </Box>
         ))}
       </Box>
@@ -70,10 +75,10 @@ const Hero = (): JSX.Element => {
   );
 
   return (
-    <Grid container spacing={4}>
-      <Grid item container alignItems={'center'} xs={12} md={6}>
+    <Grid container spacing={2} alignItems={'top'} >
+      <Grid item container alignItems={'center'} xs={5} md={6}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
-          <LeftSide />
+          <TopSide />
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>
@@ -100,7 +105,7 @@ const Hero = (): JSX.Element => {
                 zIndex={2}
                 maxWidth={1}
                 height={'auto'}
-                sx={{ verticalAlign: 'middle' }}
+                sx={{ verticalAlign: 'top' }}
               >
                 <LaptopSkeletonIllustration />
               </Box>
@@ -125,7 +130,7 @@ const Hero = (): JSX.Element => {
                   width="100%"
                   height="100%"
                   minHeight={250}
-                  src="https://www.youtube.com/embed/0dWQhPuuG-k?autoplay=1&controls=0&loop=1playlist=PLxK1IGEFZi6OkFroD0THpEHcM1BZX4TFG;"
+                  src="https://www.youtube.com/embed/0dWQhPuuG-k?autoplay=1&controls=1&loop=1playlist=PLxK1IGEFZi6OkFroD0THpEHcM1BZX4TFG;"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
                   boxShadow={4}

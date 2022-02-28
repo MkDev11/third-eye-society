@@ -83,7 +83,7 @@ const NotFound = (): JSX.Element => {
                 <Box
                   component={'img'}
                   src={
-                    'https://assets.maccarianagency.com/svg/illustrations/drawkit-illustration6.svg'
+                    'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/75d987d8-85fd-409b-015b-fc969f2f2300/public'
                   }
                   width={1}
                   height={1}

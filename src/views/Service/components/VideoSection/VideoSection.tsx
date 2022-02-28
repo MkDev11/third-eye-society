@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { useTheme } from '@mui/material/styles';
+import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
+import { HorizontallyAlignedBlogCardWithShapedImage } from 'blocks/blog';
 
 const VideoSection = (): JSX.Element => {
   const theme = useTheme();
@@ -81,13 +82,19 @@ const VideoSection = (): JSX.Element => {
         <Box>
           <Box marginBottom={2}>
             <Typography
-              variant="h4"
+              variant="h2"
               color="text.primary"
-              sx={{
-                fontWeight: 700,
+              align='center'
+              sx={{ fontWeight: 700, 
+                background: `linear-gradient(180deg, transparent 82%, ${alpha(
+                  theme.palette.secondary.main,
+                  0.2,
+                )} 0%)`,
+                
+                
               }}
             >
-              See Below for how to Mint a
+               How to Mint a
                Third Eye Society NFT!
             </Typography>
           </Box>
@@ -98,6 +105,7 @@ const VideoSection = (): JSX.Element => {
             maxHeight={300}
             maxWidth={{ xs: '400%', sm: 400 }}
             marginTop={3}
+            sx={{Align:'center'}}
           >
             <Box
               component={'iframe'}

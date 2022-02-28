@@ -31,7 +31,7 @@ const Footer = (): JSX.Element => {
               component={'img'}
               src={
                 mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
+                  ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/86f01e4a-c777-4f7c-ac73-d6d9ac4ba900/public'
                   : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
               }
               height={1}
@@ -49,18 +49,18 @@ const Footer = (): JSX.Element => {
               >
                 Home
               </Link>
+      
             </Box>
-
             <Box marginTop={1}>
               <Button
                 variant="outlined"
                 color="primary"
                 component="a"
                 target="blank"
-                href="https://mui.com/store/items/the-front-landing-page/"
+                href="https://opensea.io/collection/third-eye-society"
                 size="small"
               >
-                Purchase now
+                Find us on OpenSea
               </Button>
             </Box>
           </Box>
@@ -73,7 +73,7 @@ const Footer = (): JSX.Element => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; Third Eye Society. 2022, All rights reserved
         </Typography>
         <Typography
           align={'center'}
