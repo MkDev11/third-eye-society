@@ -64,7 +64,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             href="src/views/Service/components/About"
             color="text.primary"
           >
-            Components
+            Team
           </Link>
         </Box>
         <Box marginLeft={3}>
@@ -74,7 +74,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             href="/demos"
             color="text.primary"
           >
-            Demos
+            FAQ
           </Link>
         </Box>
         <Box marginLeft={3}>
@@ -86,7 +86,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             color="primary"
             component="a"
             target="blank"
-            href="https://mint.thirdeyesociety.io"
+            href="src/views/NotFoundCover"
             size="large"
           >
             Mint

@@ -92,7 +92,7 @@ const Fluid = ({
               color="primary"
               component="a"
               target="blank"
-              href="https://mint.thirdeyesociety.io/"
+              href="src/views/NotFoundCover"
               size="large"
             >
               Mint

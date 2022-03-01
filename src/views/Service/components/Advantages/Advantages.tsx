@@ -194,7 +194,7 @@ const Advantages = (): JSX.Element => {
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Button
             component={'a'}
-            href={'https://mint.thirdeyesociety.io'}
+            href={'src/views/NotFoundCover'}
             target={'_blank'}
             variant="contained"
             color="primary"

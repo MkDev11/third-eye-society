@@ -97,7 +97,7 @@ const Topbar = ({
             color="primary"
             component="a"
             target="blank"
-            href="./mint"
+            href="src/views/NotFoundCover"
             size="large"
           >
             Mint

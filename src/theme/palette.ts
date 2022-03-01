@@ -21,7 +21,7 @@ export const light = {
   },
   text: {
     primary: '#1e2022',
-    secondary: '#677788',
+    secondary: '#ffff99',
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {

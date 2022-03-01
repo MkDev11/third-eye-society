@@ -106,7 +106,7 @@ const Integrations = (): JSX.Element => {
                 subtitle='at 100% sold 30ETH witll be deposited into TES Community wallet.'
                 action={{
                   label: 'Multisig Community Wallet',
-                  onClick: () => window.location.href='/not-found-cover'
+                  onClick: () => window.location.href='src/views/NotFoundCover'
                 }}
               />
             </Timeline>
