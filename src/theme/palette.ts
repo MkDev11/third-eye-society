@@ -25,10 +25,10 @@ export const light = {
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
-    paper: '#ffffff',
-    default: '#ffffff',
-    level2: '#f5f5f5',
-    level1: '#ffffff',
+    paper: '#FFFFE0',
+    default: '#EEE8AA',
+    level2: '#EEE8AA',
+    level1: '#EEE8AA',
   },
 };
 

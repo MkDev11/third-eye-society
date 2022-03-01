@@ -100,19 +100,23 @@ const VideoSection = (): JSX.Element => {
           </Box>
 
           <Box
-            height={1}
+        
+            height={.75}
             width={1}
-            maxHeight={300}
-            maxWidth={{ xs: '400%', sm: 400 }}
+            maxHeight={400}
+            maxWidth={{ xs: '400%', sm: 600 }}
             marginTop={3}
+            alignItems={'center'}
+            justifyContent={'center'}
             sx={{Align:'center'}}
           >
             <Box
               component={'iframe'}
+              alignItems={'center'}
               title="video"
               width="100%"
               height="100%"
-              minHeight={250}
+              minHeight={350}
               src="https://www.youtube.com/embed/D8V8lda-xpM"
               frameBorder="0"
               allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"

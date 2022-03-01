@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
 import Link from '@mui/material/Link';
 import { Button, buttonClasses } from '@mui/material';
+import { SocialIcon } from 'react-social-icons';
 
 const Hero = (): JSX.Element => {
   const theme = useTheme();
@@ -19,12 +20,13 @@ const Hero = (): JSX.Element => {
   const TopSide = () => (
     <Box>
       <Box marginBottom={2} marginTop={2}>
-        <Typography component={'span'} variant="h1" sx={{ fontWeight: 600, verticalAlign:'Center' }}>
-        Third Eye{' '}
+        <Typography component={'span'} variant="h1" color={'MediumSeaGreen'} sx={{ fontWeight: 600, verticalAlign:'Center' }}>
+          Third Eye{' '} 
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'primary'}
+            color={'Black'}
+            text-align={'Center'}
             sx={{
               background: `linear-gradient(180deg, transparent 82%, ${alpha(
                 theme.palette.secondary.main,
@@ -45,31 +47,10 @@ const Hero = (): JSX.Element => {
         justifyContent={'flex-start'}
         marginTop={2}
       >
-        {[
-          'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5b473795-8dfe-4d3e-7109-180e889e7900/public',
-          'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/01d3fa30-c2fa-4cb4-0e5a-b69a76e55e00/public',
-
-        ].map((item, i) => (
-          <Box maxWidth={70} marginTop={2} marginRight={4} key={i}>
-            <Box
-              component="img"
-              height={1}
-              width={1}
-              src={item}
-              alt="..."
-            
-              sx={{
-                
-                filter:
-                  theme.palette.mode === 'dark'
-                    ? 'brightness(0) invert(0.7)'
-                    : 'contrast(0) brightness(0)',
-                
-              }}
-            />
-            
-          </Box>
-        ))}
+        <SocialIcon url="https://twitter.com/thirdeyesociety" network="twitter" />&ensp;
+        <SocialIcon url="https://discord.gg/grccYtJ2DJ" network="discord" /> &ensp;
+        <SocialIcon url="https://www.instagram.com/thirdeyeapes/" network="instagram" /> &ensp;
+        <SocialIcon url="https://www.facebook.com/ThirdEyeApesSociety" network="facebook" /> &ensp;
       </Box>
     </Box>
   );
