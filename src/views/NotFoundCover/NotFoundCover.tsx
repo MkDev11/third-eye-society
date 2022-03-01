@@ -53,9 +53,9 @@ const NotFoundCover = (): JSX.Element => {
                     color="text.secondary"
                     align={isMd ? 'left' : 'center'}
                   >
-                    Oops! Looks like you followed a bad link.
+                    Oops! Looks like you&apos;re 
                     <br />
-                    If you think this is a problem with us, please{' '}
+                    an early bird! We&apos;re Still cooking this up!{' '}
                     <Link href={''} underline="none">
                       tell us
                     </Link>

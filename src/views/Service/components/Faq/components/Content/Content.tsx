@@ -81,12 +81,12 @@ const Content = (): JSX.Element => {
             {
               title: 'WHAT WALLET DO I NEED?',
               subtitle:
-                'You will need an Ethereum ERC20 Wallet in order to Mint Third Eye Apes NFTs! ',
+                'You will need an Ethereum ERC20 Wallet in order to Mint Third Eye Society NFTs! ',
             },
             {
               title: 'WHAT ARE THE EXACT STEPS TO MINTING?',
               subtitle:
-                '1. Fund your Metamask wallet with ETH (Ethereum) 2. The day of the drop go to the homepage of our website which you can find in on our  3. Connect your wallet using the button   4. Select the number of TEAS you want and click The Mint Button  5. Approve cost + gas fees for the transaction',
+                '1. Fund your Metamask wallet with ETH (Ethereum) 2. The day of launch go to the homepage of our website which you can find in on our  3. Connect your wallet using the button   4. Select the number of TES you want and click The Mint Button  5. Approve cost + gas fees for the transaction',
             },
           ]}
         />
@@ -103,12 +103,12 @@ const Content = (): JSX.Element => {
             {
               title: 'WHITELIST?',
               subtitle:
-                'We will be whitelisting 1111 apes to the most trusted community members for a discounted price of .1 ETH, all whitelisted members are guaranteed to mint at least one Third Eye Ape. Therefore, by joining the Whitelist, you wont have to enter gas wars and will guarantee to get yourself an Ape before they sell out.',
+                'We will be whitelisting the most trusted community members for a discounted price of .05 ETH, all whitelisted members are guaranteed to mint at least one Third Eye Ape. Therefore, by joining the Whitelist, you wont have to enter gas wars and will guarantee to get yourself an Ape before they sell out.',
             },
             {
               title: 'ENTRY OPPORTUNITIES:',
               subtitle:
-                'Reach Level 11 on the server, by being active in the chat. You can level up by actively talking in the Discord or by inviting people in. No spam please.  Invite 75 people to the server (the people you invite must stay in the server and verify their account in ✅ verification). If you are an influencer and want to promote the Third Eye Apes send a message with your social media @username,  Win one of our daily giveaways',
+                'Reach Level 11 on the server, by being active in the chat. You can level up by actively talking in the Discord or by inviting people in. No spam please.  Wining one of our daily giveaways. If you are an influencer and want to promote the Third Eye Apes send a message with your social media @username',
             },
           ]}
         />

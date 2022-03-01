@@ -65,7 +65,7 @@ const VideoSection = (): JSX.Element => {
                   width={1}
                   height={1}
                   sx={{
-                    objectFit: 'scale-down',
+                    objectFit: 'fill',
                     borderRadius: '2.5rem',
                     filter:
                       theme.palette.mode === 'dark'
@@ -85,10 +85,16 @@ const VideoSection = (): JSX.Element => {
               variant="h2"
               color="text.primary"
               align='center'
-              sx={{ fontWeight: 700, 
-                background: `linear-gradient(180deg, transparent 82%, ${alpha(
+              sx={{ 
+                textShadow:'1px 1px #2F4F4F',
+                borderWidth:'1px',
+                borderBottom:'hidden',
+                borderColor:theme.palette.secondary.main,
+                borderRadius:1,
+                fontWeight: '700',
+                background: `linear-gradient(180deg, transparent 0%, ${alpha(
                   theme.palette.secondary.main,
-                  0.2,
+                  0.4,
                 )} 0%)`,
                 
                 

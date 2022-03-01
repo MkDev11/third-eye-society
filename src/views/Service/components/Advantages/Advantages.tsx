@@ -34,7 +34,7 @@ const mock = [
   {
     title: 'DAO and Community Wallet',
     subtitle:
-      'We will be moving 20% of mint profits into a community Wallet to be used for financing e-commerce start ups, event planning, and further, giveaways',
+      'We will be moving 30ETH of mint profits into a community wallet to be used for financing e-commerce start ups, event planning, and further giveaways',
     icon: (
       <svg
         height={24}
@@ -56,7 +56,7 @@ const mock = [
   {
     title: 'Buisness & Personal Development',
     subtitle:
-      'TES Holders gain access to a network of industries mentors, Along with credit monitoring services',
+      'TES Holders gain access to a network of industry mentors, along with credit monitoring services',
     icon: (
       <svg
         height={24}
@@ -119,7 +119,7 @@ const mock = [
     ),
   },
   {
-    title: 'Exclusive Merchidaise',
+    title: 'Exclusive Merchandise',
     subtitle:
       'All TES Holders will get access to IRL merch along with future digital collectibles',
     icon: (
@@ -152,25 +152,28 @@ const Advantages = (): JSX.Element => {
             textTransform: 'uppercase',
             fontWeight: 'medium',
           }}
+          variant={'h2'}
           gutterBottom
           color={'secondary.main'}
           align={'center'}
         >
-          About Us
+          Our Misson 
         </Typography>
         <Typography
           variant={'h3'}
           gutterBottom
           align={'center'}
+          color={'#000066'}
           sx={{ fontWeight: 700 }}
         >
-          Our mission is to create an ecosystem to breed wealth and success for all of our community.
+         is to create an ecosystem to breed wealth and success for all of our community.
           <br />
         </Typography>
         <Typography
           variant={'h4'}
           gutterBottom
           align={'center'}
+          color={'#000066'}
           sx={{ fontWeight: 500 }}
         >
 

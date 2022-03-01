@@ -14,9 +14,9 @@ export const light = {
     contrastText: '#fff',
   },
   secondary: {
-    light: '#ffb74d',
+    light: '#f9b934',
     main: '#f9b934',
-    dark: '#FF9800',
+    dark: '#f9b934',
     contrastText: 'rgba(0, 0, 0, 0.87)',
   },
   text: {
@@ -61,7 +61,7 @@ export const dark = {
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
-    paper: '#222B45',
+    paper: '#0f051a',
     default: '#222B45',
     level2: '#333',
     level1: '#2D3748',

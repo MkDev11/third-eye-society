@@ -10,6 +10,7 @@ import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
 import Link from '@mui/material/Link';
 import { Button, buttonClasses } from '@mui/material';
 import { SocialIcon } from 'react-social-icons';
+import { relative } from 'path/posix';
 
 const Hero = (): JSX.Element => {
   const theme = useTheme();
@@ -20,17 +21,23 @@ const Hero = (): JSX.Element => {
   const TopSide = () => (
     <Box>
       <Box marginBottom={2} marginTop={2}>
-        <Typography component={'span'} variant="h1" color={'MediumSeaGreen'} sx={{ fontWeight: 600, verticalAlign:'Center' }}>
+        <Typography component={'span'} variant="h1" color={'#F8F8FF'}  sx={{ fontWeight: 675, verticalAlign:'Center', textShadow:'2px 2px #2F4F4F' }}>
           Third Eye{' '} 
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'Black'}
+            color={'#000066'}
             text-align={'Center'}
             sx={{
-              background: `linear-gradient(180deg, transparent 82%, ${alpha(
+              textShadow:'2px 2px #2F4F4F',
+              fontWeight: 700,
+              borderWidth:'.5px',
+              borderBottom:'hidden',
+              borderColor:theme.palette.secondary.main,
+              borderRadius:1,
+              background: `linear-gradient(180deg, transparent 77%, ${alpha(
                 theme.palette.secondary.main,
-                0.3,
+                0.4,
               )} 0%)`,
             }}
           >
@@ -38,8 +45,34 @@ const Hero = (): JSX.Element => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h6" component="p" color={'text.secondary'}>
-      Opening the door to wealth and wisdom for all Apes.
+      <Typography variant="h5" component="span" color={'#F8F8FF'}
+        sx={{
+          textShadow:'2px 2px #2F4F4F',
+         
+          borderWidth:'1px',
+          borderBottom:'hidden',
+          borderColor:theme.palette.secondary.main,
+          borderRadius:1,
+          fontWeight: '700',
+        }}>
+
+      Opening the door on 
+      </Typography>
+      <Typography variant="h5" component="span" color={'MediumSeaGreen'} text-align={'Center'}       
+        sx={{
+          textShadow:'2px 2px #2F4F4F',
+          padding: '0 7px',
+          borderWidth:'1px',
+          borderBottom:'solid',
+          borderColor:theme.palette.secondary.main,
+          borderRadius:1,
+          fontWeight: '700',
+        }}>
+      03/03/22 07:00 PM EST 
+      </Typography>
+      <div> </div>
+      <Typography variant="h5" component="p" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
+      to wealth and wisdom for all Apes
       </Typography>
       <Box
         display="flex"

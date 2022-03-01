@@ -36,6 +36,7 @@ const Footer = (): JSX.Element => {
           variant="contained"
           color="primary"
           size="large"
+          href="https://discord.gg/grccYtJ2DJ"
           fullWidth={!isMd}
           startIcon={
             <svg

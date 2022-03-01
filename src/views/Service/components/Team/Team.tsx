@@ -16,31 +16,40 @@ import Container from 'components/Container';
 
 const mock = [
   {
-    name: 'GMONEY @realgmoneybaby',
-    title: 'Marketing',
+    name: 'GMONEY',
+    title: 'Founder, Marketing',
     avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/bdab0a0d-43c1-40aa-521b-4b4386058400/public',
+    href: 'https://twitter.com/realgmoneybaby',
   },
   {
     name: 'GHOST',
-    title: 'Marketing',
+    title: 'Founder, Marketing',
     avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/5ec0b2ea-f704-4531-6704-e2c547aedf00/public',
+    href: 'https://twitter.com/GhosttrapperUSA',
   },
   {
     name: 'Mukubass',
     title: 'Developer',
     avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/3df71f08-9905-4a89-a06f-49ba7a2bd600/public',
-    href: 'https://twitter.com/mukubass'
+    href: 'https://twitter.com/mukubass',
   },
   {
     name: 'TOXIC',
     title: 'Head Mod',
     avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/f85fb13e-9725-4cb4-6ba6-604d313b0a00/public',
+    href: 'https://twitter.com/ThirdEyeApe97',
   },
   {
     name: 'Kacey',
     title: 'Community Manager',
     avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/4ae580b3-be22-49d5-0069-18cd76e9df00/public',
-    
+    href: 'https://twitter.com/kclajoie',
+  },
+  {
+    name: 'Deana',
+    title: 'Community Manager',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/9786dd82-e943-4090-d216-61600fbaac00/public',
+    href: 'https://twitter.com/deana_mandigo',
   },
 ];
 
@@ -75,36 +84,21 @@ const Reviews = (): JSX.Element => {
               textTransform: 'uppercase',
             }}
             gutterBottom
-            color={'text.secondary'}
+            variant={'h4'}
+            color={'#f9b934'}
             align={'center'}
             fontWeight={700}
           >
-            Our Team
+            Meet Our Team
           </Typography>
-          <Typography
-            variant={'h4'}
-            gutterBottom
-            align={'center'}
-            sx={{ fontWeight: 700 }}
-          >
-            Our Motto is 
-          </Typography>
-          <Typography
-            variant={'h6'}
-            component={'p'}
-            color={'text.secondary'}
-            align={'center'}
-          >
-            Execute over promising 
-            <br />
 
-          </Typography>
+
 
         </Box>
         <Grid container spacing={2}>
           {mock.map((item, i) => (
             <Grid item xs={12} sm={6} md={3} key={i}>
-              <Box component={Card} boxShadow={0} bgcolor={'transparent'}>
+              <Box component={Card} boxShadow={0} bgcolor={'#f9b934'}>
                 <Box
                   component={CardMedia}
                   borderRadius={2}
@@ -125,7 +119,9 @@ const Reviews = (): JSX.Element => {
                     <IconButton
                       aria-label="twitter"
                       size={'small'}
-                      color={'primary'}
+                      color={'default'}
+                      href={item.href}
+
                     >
                       <TwitterIcon />
                     </IconButton>
