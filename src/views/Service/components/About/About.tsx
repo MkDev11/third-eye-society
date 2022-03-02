@@ -1,16 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
-import Link from '@mui/material/Link';
-import { Button, buttonClasses } from '@mui/material';
 import { SocialIcon } from 'react-social-icons';
-import { relative } from 'path/posix';
+
 
 const Hero = (): JSX.Element => {
   const theme = useTheme();
@@ -127,31 +125,27 @@ const Hero = (): JSX.Element => {
                 position={'absolute'}
                 top={'8.4%'}
                 left={'12%'}
-                width={'76%'}
-                height={'83%'}
+                width='auto'
+                height='auto'
                 border={`1px solid ${theme.palette.alternate.dark}`}
                 zIndex={3}
+                component={'iframe'}
+                title="video"
+                loading="lazy"
+                minHeight={200}
+                src="https://www.youtube.com/embed/0dWQhPuuG-k?autoplay=1&controls=1&loop=1playlist=PLxK1IGEFZi6OkFroD0THpEHcM1BZX4TFG;"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                boxShadow={4}
+                borderRadius={2}
                 sx={{
                   '& .lazy-load-image-loaded': {
-                    height: 1,
-                    width: 1,
+                    height: .5,
+                    width: .5,
                   },
                 }}
               >
-                <Box
-                  component={'iframe'}
-                  title="video"
-                  width="100%"
-                  height="100%"
-                  minHeight={250}
-                  src="https://www.youtube.com/embed/0dWQhPuuG-k?autoplay=1&controls=1&loop=1playlist=PLxK1IGEFZi6OkFroD0THpEHcM1BZX4TFG;"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-                  boxShadow={4}
-                  borderRadius={2}
-                 
-                
-                />
+
               </Box>
             </Box>
           </Box>
