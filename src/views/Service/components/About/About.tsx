@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
@@ -87,8 +86,8 @@ const Hero = (): JSX.Element => {
   );
 
   return (
-    <Grid container spacing={2} alignItems={'top'} >
-      <Grid item container alignItems={'center'} xs={5} md={6}>
+    <Grid container spacing={5} alignItems={'top'} >
+      <Grid item container alignItems={'center'} xs={3} md={5}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <TopSide />
         </Box>
@@ -125,17 +124,17 @@ const Hero = (): JSX.Element => {
                 position={'absolute'}
                 top={'8.4%'}
                 left={'12%'}
-                width='auto'
-                height='auto'
+                width='75%'
+                height='85%'
                 border={`1px solid ${theme.palette.alternate.dark}`}
                 zIndex={3}
                 component={'iframe'}
-                title="video"
+                title="YouTube video player"
                 loading="lazy"
                 minHeight={200}
-                src="https://www.youtube.com/embed/0dWQhPuuG-k?autoplay=1&controls=1&loop=1playlist=PLxK1IGEFZi6OkFroD0THpEHcM1BZX4TFG;"
+                src="https://www.youtube.com/embed/GAbnbmtcQB4?controls=0?autoplay=1"
                 frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                 boxShadow={4}
                 borderRadius={2}
                 sx={{

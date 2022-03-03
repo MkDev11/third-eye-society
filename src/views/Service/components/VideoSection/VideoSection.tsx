@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
-import { HorizontallyAlignedBlogCardWithShapedImage } from 'blocks/blog';
+
 
 const VideoSection = (): JSX.Element => {
   const theme = useTheme();

@@ -6,7 +6,7 @@ export const light = {
     dark: '#edf1f7',
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
-  mode: 'light' as PaletteMode,
+  mode: 'dark' as PaletteMode,
   primary: {
     main: '#377dff',
     light: '#467de3',
@@ -42,7 +42,7 @@ export const dark = {
     black: '#000',
     white: '#fff',
   },
-  mode: 'dark' as PaletteMode,
+  mode: 'light' as PaletteMode,
   primary: {
     main: '#1976d2',
     light: '#2196f3',

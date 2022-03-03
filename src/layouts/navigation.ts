@@ -8,11 +8,11 @@ const pages = {
   team: [
     {
       title: 'Benefits',
-      href: './advantages',
+      href: '',
     },
     {
       title: 'RoadMap',
-      href: '/help-center-article',
+      href: '',
     },
   ],
   about: [
@@ -28,7 +28,7 @@ const pages = {
   faq: [
     {
       title: 'Amazon Store',
-      href: '/faq',
+      href: 'https://www.wififba.com/thirdeyeapes',
     }
   ],
 };

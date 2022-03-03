@@ -2,14 +2,12 @@ import React from 'react';
 import { alpha, useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 import Container from 'components/Container';
@@ -18,7 +16,7 @@ const mock = [
   {
     name: 'GMONEY',
     title: 'Founder, Marketing',
-    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/bdab0a0d-43c1-40aa-521b-4b4386058400/public',
+    avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/a07cfdca-e8e4-41bc-cf17-1a1e1cd8ae00/public',
     href: 'https://twitter.com/realgmoneybaby',
   },
   {

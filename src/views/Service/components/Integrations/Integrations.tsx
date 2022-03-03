@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { Component }  from 'react';
+import React from 'react';
 import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -8,16 +8,12 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Timeline, TimelineEvent } from '@mailtop/horizontal-timeline';
 import { MdAttachMoney,MdLaunch, MdGeneratingTokens, MdTerrain, MdStorefront }from 'react-icons/md';
-import ScrollBar from 'react-perfect-scrollbar';
-import materialIcon from 'react-icons';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 
 
 const Integrations = (): JSX.Element => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('xs'), {
-    defaultMatches: true,
-  });
+
   return (
 
     <Box>
@@ -60,7 +56,7 @@ const Integrations = (): JSX.Element => {
           <Grid item container alignItems={'space-between'} xs={100} md={100}>
             <Divider sx={{ width: 4 }} />
             <Divider sx={{ height: 10 }} />
-            <Timeline minEvents="5" height="100%" width="100%" textShadow="2px 2px #2F4F4F"  font-Weight="700">
+            <Timeline minEvents="5" height="100%" width="100%" text-Shadow="2px 2px #2F4F4F"  sx={{ fontWeight:'700', color:'#001242'}}>
               <TimelineEvent
                 position='relative'
                 color='PaleGreen'
