@@ -86,7 +86,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             color="primary"
             component="a"
             target="blank"
-            href="src/views/NotFoundCover"
+            href="https://mint.thirdeyesociety.io"
             size="large"
           >
             Mint

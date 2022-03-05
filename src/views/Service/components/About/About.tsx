@@ -139,8 +139,8 @@ const Hero = (): JSX.Element => {
                 borderRadius={2}
                 sx={{
                   '& .lazy-load-image-loaded': {
-                    height: .5,
-                    width: .5,
+                    height: 1,
+                    width: 1,
                   },
                 }}
               >

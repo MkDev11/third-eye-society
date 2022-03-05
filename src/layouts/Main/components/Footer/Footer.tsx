@@ -57,7 +57,7 @@ const Footer = (): JSX.Element => {
                 color="primary"
                 component="a"
                 target="blank"
-                href="https://opensea.io/collection/third-eye-society"
+                href="https://opensea.io/collection/thirdeyeapesv2"
                 size="small"
               >
                 Find us on OpenSea
