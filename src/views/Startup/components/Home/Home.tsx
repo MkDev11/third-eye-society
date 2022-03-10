@@ -94,10 +94,10 @@ const Hero = (): JSX.Element => {
       >
         <Box
           component={LazyLoadImage}
-          effect="blur"
+          
           src={'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/e8f2d0da-8de6-4088-8997-93f157961d00/public'}
           height={{ xs: 'auto', md: 1 }}
-          maxHeight={{ xs: 50, md: 1 }}
+          maxHeight={{ xs: 200, md: 1 }}
           width={1}
           maxWidth={1}
         />
