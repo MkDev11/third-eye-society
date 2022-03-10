@@ -44,6 +44,12 @@ const Team = (): JSX.Element => {
             href: 'https://twitter.com/GhosttrapperUSA',
           },
           {
+            name: 'Tev',
+            title: 'Artist & Creative Director',
+            avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/e4f757df-cb00-4d54-abd2-dd9c45feee00/public',
+            href: 'https://twitter.com/artbytev',
+          },
+          {
             name: 'Mukubass',
             title: 'Developer',
             avatar: 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/d016bfe0-d419-4c67-1a18-4e741f9bd700/public',

@@ -43,7 +43,7 @@ const Hero = (): JSX.Element => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h5" component="span" color={'#F8F8FF'}
+      <Typography variant="h4" component="span" color={'#F8F8FF'}
         sx={{
           textShadow:'2px 2px #2F4F4F',
         
@@ -56,7 +56,7 @@ const Hero = (): JSX.Element => {
 
       Opening the door on 
       </Typography>
-      <Typography variant="h5" component="span" color={'MediumSeaGreen'} text-align={'Center'}       
+      <Typography variant="h4" component="span" color={'MediumSeaGreen'} text-align={'Center'}       
         sx={{
           textShadow:'2px 2px #2F4F4F',
           padding: '0 7px',
@@ -72,7 +72,8 @@ const Hero = (): JSX.Element => {
       <Typography variant="h5" component="p" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
       to wealth and wisdom for all Apes
       </Typography>
-      <Button variant="contained" color="primary" size="large" href='https://mint.thirdeyesociety.io'>
+      <Button variant="contained" color="primary" size="large" href='https://mint.thirdeyesociety.io' sx={{justifyContent:'center',
+        alignItems:'center'}} >
         Mint
       </Button>
     </Box>
@@ -84,7 +85,7 @@ const Hero = (): JSX.Element => {
         sx={{
           height: { xs: 'auto', md: 1 },
           '& img': {
-            objectFit: 'fill',
+            objectFit: 'scale-down',
           },
           '& .lazy-load-image-loaded': {
             height: 1,
@@ -155,12 +156,12 @@ const Hero = (): JSX.Element => {
           },
         }}
       >
-        <Container position={'relative'} zIndex={4}>
+        <Container position={'absolute'} zIndex={4}>
           <Box
             display={'flex'}
             flexDirection={{ xs: 'column', md: 'row' }}
             position={'relative'}
-            minHeight={{ md: 600 }}
+            minHeight={{ md: 100 }}
           >
             <Box
               width={1}
