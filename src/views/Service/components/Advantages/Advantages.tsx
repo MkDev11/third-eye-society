@@ -166,7 +166,7 @@ const Advantages = (): JSX.Element => {
           color={'#000066'}
           sx={{ fontWeight: 700 }}
         >
-         is to create an ecosystem to breed wealth and success for all of our community.
+         We are creating an ecosystem of wealth and success for our, consciousness-expanding, community
           <br />
         </Typography>
         <Typography

@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
-
 import { NavItem } from './components';
 
 interface Props {
@@ -49,12 +48,12 @@ const Topbar = ({
         <Box
           component={'img'}
           src={
-            mode === 'dark' && !colorInvert
-              ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/86f01e4a-c777-4f7c-ac73-d6d9ac4ba900/public'
-              : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
+            mode === 'light' && !colorInvert
+              ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/e95bc9a1-6fad-4280-40b1-812f79f05500/public'
+              : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/4acc6e55-8057-42f1-bb6a-87a850d9bc00/public'
           }
-          height={.5}
-          width={.5}
+          height={'200%'}
+          width={'200%'}
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
