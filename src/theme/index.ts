@@ -10,9 +10,11 @@ const getTheme = (mode: string, themeToggler: () => void): Theme =>
       shadows: shadows(mode),
       typography: {
         fontFamily: '"Caveat", Regular',
+        fontSize: 20,
         button: {
           textTransform: 'none',
           fontWeight: 'medium' as React.CSSProperties['fontWeight'],
+          
         },
       },
       zIndex: {
@@ -23,6 +25,7 @@ const getTheme = (mode: string, themeToggler: () => void): Theme =>
         MuiButton: {
           styleOverrides: {
             root: {
+              
               fontWeight: 400,
               borderRadius: 5,
               paddingTop: 10,
