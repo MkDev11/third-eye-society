@@ -2,7 +2,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha,useTheme } from '@mui/material/styles';
@@ -170,7 +169,7 @@ const Hero = (): JSX.Element => {
           },
         }}
       >
-        <Container position={'absolute'} zIndex={4}>
+        <Container position={'relative'} zIndex={4}>
           <Box
             display={'flex'}
             flexDirection={{ xs: 'column', md: 'row' }}
@@ -229,7 +228,7 @@ const Hero = (): JSX.Element => {
                       },
                     }}
                   >
-                    <RightSide />
+                    <RightSide align-items={RightSide}/>
                   </Box>
                 </Box>
               </Box>
