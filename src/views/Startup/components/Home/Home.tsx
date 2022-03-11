@@ -29,6 +29,7 @@ const Hero = (): JSX.Element => {
               textShadow:'2px 2px MidnightBlue',
               fontWeight: 700,
               borderWidth:'.5px',
+              verticalAlign:'Center',
               borderBottom:'hidden',
               borderTop:'hidden',
               borderColor:theme.palette.secondary.main,
@@ -43,7 +44,7 @@ const Hero = (): JSX.Element => {
           </Typography>
         </Typography>
       </Box>
-      <Typography variant="h4" component="span" color={'#F8F8FF'}
+      <Typography variant="h4" component="span" color={'#F8F8FF'} 
         sx={{
           textShadow:'2px 2px #2F4F4F',
         
@@ -54,7 +55,7 @@ const Hero = (): JSX.Element => {
           fontWeight: '700',
         }}>
 
-      Opening the door on 
+        Opening the door on 
       </Typography>
       <Typography variant="h4" component="span" color={'MediumSeaGreen'} text-align={'Center'}       
         sx={{
@@ -109,16 +110,16 @@ const Hero = (): JSX.Element => {
       >
         <Box
           component={LazyLoadImage}
-          
-          src={'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/e8f2d0da-8de6-4088-8997-93f157961d00/public'}
+          src={'https://storageapi.fleek.co/fb1bc31d-b8ac-4156-ab04-d0b390a62da3-bucket/TEAS Site Images/Banner Top.png'}
           height={{ xs: 'auto', md: 1 }}
           maxHeight={{ xs: 200, md: 1 }}
-          width={1}
-          maxWidth={1}
+          width={'95%'}
+          maxWidth={'150%'}
         />
       </Box>
     );
   };
+
 
 
 
@@ -185,7 +186,7 @@ const Hero = (): JSX.Element => {
               alignItems={'center'}
             >
               <Container>
-                <LeftSide/>
+                <LeftSide align-items={'center'}/>
               </Container>
             </Box>
             <Box
@@ -219,15 +220,16 @@ const Hero = (): JSX.Element => {
                       position: { xs: 'relative', md: 'absolute' },
                       clipPath: {
                         xs: 'none',
-                        md: 'polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)',
+                        md: 'polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%)',
                       },
                       shapeOutside: {
                         xs: 'none',
-                        md: 'polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)',
+                        md: 'polygon(5% 0%, 100% 0, 100% 100%, 0% 100%)',
                       },
                     }}
                   >
                     <RightSide />
+                    
                   </Box>
                 </Box>
               </Box>
