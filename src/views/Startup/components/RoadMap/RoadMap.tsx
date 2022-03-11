@@ -1,8 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import List from '@mui/material/List';
 import Avatar from '@mui/material/Avatar';
@@ -10,7 +8,7 @@ import Container from 'components/Container';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { MdAttachMoney,MdLaunch, MdGeneratingTokens, MdTerrain, MdStorefront }from 'react-icons/md';
+
 
 const mock = [
   {
@@ -42,7 +40,7 @@ const mock = [
     subtitle:
       '3/25/2022',
     description:
-      '$TES Token Launch, Soft Staking & Token distrubtion by Airdrop, future plans include listing to uniswap',
+      '$TES Token Launch, Soft Staking & Token distribution by Airdrop, future plans include listing to uniswap',
     icon: (
       <svg
         height={24}
@@ -66,7 +64,7 @@ const mock = [
     subtitle:
       'Staking available at 25% sold',
     description:
-     'A liquidity pool will be set up to enable staking of TEASv2 NFTs',
+     'A liquidity pool will be set up to enable the staking of TEASv2 NFTs',
     icon: (
       <svg
         height={24}
@@ -163,14 +161,28 @@ const Work = (): JSX.Element => {
 
   return (
     <Box bgcolor="alternate.main">
-      <Container maxWidth={800}>
+      <br></br>
+      <Typography
+        sx={{
+          textTransform: 'uppercase',
+          fontWeight: 'medium',
+        
+        }}
+        variant={'h5'}
+        color={'secondary.main'}
+        align={'center'}
+      >
+        RoadMap
+      </Typography>
+      <Container maxWidth={850}>
+
         <List
           sx={{
             width: '100%',
             bgcolor: 'background.paper',
-            padding: 2,
+            padding: 0,
             borderRadius: 2,
-            boxShadow: 2,
+            boxShadow: 5,
           }}
         >
           {mock.map((item, i) => (

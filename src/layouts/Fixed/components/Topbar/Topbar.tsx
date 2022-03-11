@@ -27,7 +27,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
         display={'flex'}
         component={'a'}
         href="/"
-        title="theFront"
+        title="ThirdEyeSociety"
         width={{ xs: 100, md: 120 }}
       >
         <Box
@@ -51,7 +51,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
           <Link
             underline="none"
             component="a"
-            href="/home"
+            href="/"
             color="text.primary"
           >
             About
@@ -61,7 +61,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
           <Link
             underline="none"
             component="a"
-            href="src/views/Service/components/About"
+            href="/"
             color="text.primary"
           >
             Team
@@ -71,7 +71,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
           <Link
             underline="none"
             component="a"
-            href="/demos"
+            href="/"
             color="text.primary"
           >
             FAQ

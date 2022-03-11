@@ -11,7 +11,7 @@ const Headline = (): JSX.Element => {
           fontWeight: 'medium',
         }}
         gutterBottom
-        color={'textSecondary'}
+        color={'secondary'}
         align={'center'}
       >
         F.A.Q.

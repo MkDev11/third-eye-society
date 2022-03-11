@@ -18,24 +18,25 @@ const Hero = (): JSX.Element => {
   });
   const LeftSide = () => (
     <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
-      <Box marginBottom={1}>
+      <Box >
         <Typography component={'span'} variant="h1" color={'#F8F8FF'}  sx={{ fontWeight: 675, verticalAlign:'Center', textShadow:'2px 2px #2F4F4F' }}>
       Third Eye{' '} 
           <Typography
             component={'span'}
             variant={'inherit'}
-            color={'#000066'}
+            color={'#DAA520'}
             text-align={'Center'}
             sx={{
-              textShadow:'2px 2px #2F4F4F',
+              textShadow:'2px 2px MidnightBlue',
               fontWeight: 700,
               borderWidth:'.5px',
               borderBottom:'hidden',
+              borderTop:'hidden',
               borderColor:theme.palette.secondary.main,
               borderRadius:1,
-              background: `linear-gradient(180deg, transparent 77%, ${alpha(
-                theme.palette.secondary.main,
-                0.4,
+              background: `linear-gradient(180deg, transparent 80%, ${alpha(
+                theme.palette.primary.main,
+                0.2,
               )} 0%)`,
             }}
           >
@@ -65,16 +66,29 @@ const Hero = (): JSX.Element => {
           borderColor:theme.palette.secondary.main,
           borderRadius:1,
           fontWeight: '700',
+          
         }}>
-      03/03/22 
+      04/04/2022 
       </Typography>
       <div> </div>
       <Typography variant="h5" component="p" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
       to wealth and wisdom for all Apes
       </Typography>
-      <Button variant="contained" color="primary" size="large" href='https://mint.thirdeyesociety.io' sx={{justifyContent:'center',
-        alignItems:'center'}} >
+      <Button component="span" variant="contained" color="primary" size="large" href='https://mint.thirdeyesociety.io' text-align={'center'} justify-content={'center'} align-items={'center'}  sx={{ textShadow:'2px 2px #2F4F4F',
+        padding: 'relative',
+        width:'66%',
+        borderBottom:'hidden',
+        borderColor:'RebeccaPurple',
+        borderRadius:5,
+        fontWeight: '700',
+        background: `linear-gradient(180deg, transparent 0%, ${alpha(
+          theme.palette.primary.main,
+          0.4,
+        )} 0%)`,
+      }} >
+        <Typography variant="h5" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
         Mint
+        </Typography>
       </Button>
     </Box>
   );
@@ -162,6 +176,7 @@ const Hero = (): JSX.Element => {
             flexDirection={{ xs: 'column', md: 'row' }}
             position={'relative'}
             minHeight={{ md: 100 }}
+            
           >
             <Box
               width={1}
@@ -170,7 +185,9 @@ const Hero = (): JSX.Element => {
               alignItems={'center'}
             >
               <Container>
-                <LeftSide />
+                <LeftSide  
+                  
+                  align-items={'center'} />
               </Container>
             </Box>
             <Box

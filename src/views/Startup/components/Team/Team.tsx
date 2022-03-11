@@ -113,7 +113,7 @@ const Team = (): JSX.Element => {
                       <IconButton
                         aria-label="twitter"
                         size={'small'}
-                        color={'default'}
+                        color={'primary'}
                         href={item.href}
                       >
                         <TwitterIcon />

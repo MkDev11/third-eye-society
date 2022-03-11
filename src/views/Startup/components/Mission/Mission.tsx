@@ -5,12 +5,13 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 
 const mock = [
   {
     title: 'E-commerce',
     subtitle:
-      'E Commerce. This community seeks to provide financial freedom for all members. We are excited to be handling all services in house. all holders recieve 50% off retail cost of Automated Amazon E-com stores. We will be giving away 10 start-ups free of cost thru our launch. These winners will be drawn randomly by token number',
+      'E-Commerce. This community seeks to provide financial freedom for all members. We are excited to be handling all services in house. All holders receive 50% off the retail cost of Automated Amazon E-com stores. We will be giving away 10 start-ups free of cost thru our launch. These winners will be drawn randomly by token number',
     icon: (
       <svg
         height={24}
@@ -32,7 +33,7 @@ const mock = [
   {
     title: 'DAO and Community Wallet',
     subtitle:
-      'We will be moving 30ETH of mint profits into a community wallet to be used for financing e-commerce start ups, event planning, and further giveaways',
+      'We will be moving 20% of mint profits into a community wallet to be used for financing e-commerce start-ups, event planning, and further giveaways',
     icon: (
       <svg
         height={24}
@@ -52,9 +53,9 @@ const mock = [
     ),
   },
   {
-    title: 'Buisness & Personal Development',
+    title: 'Business & Personal Development',
     subtitle:
-      'TES NFTHolders gain access to a network of industry mentors, Weekly Horoscope and Numerolgy readings, along with credit monitoring services',
+      'TES NFTHolders gain access to a network of industry mentors, Weekly Horoscope and Numerology readings, along with credit monitoring services',
     icon: (
       <svg
         height={24}
@@ -76,7 +77,7 @@ const mock = [
   {
     title: '$TES Token',
     subtitle:
-      'We are continuing development of our $TES token unique to the community. This token will be earned by holding a TES NFT. It can be used for future NFT drops, Merchandise, Metaverse assets, or for additional utilities such as evolution of your apes in phase 2 ',
+      'We are continuing the development of our $TES token unique to the community. This token will be earned by holding a TES NFT. It can be used for future NFT drops, Merchandise, Metaverse assets, or for additional utilities such as evolution of your apes in phase 2 ',
     icon: (
       <svg
         height={24}
@@ -97,7 +98,7 @@ const mock = [
   },
   {
     title: 'Metaverse Real estate ',
-    subtitle: 'Third Eye Society has already partnered with WeedPunks project to purchase a plot in Sandbox.',
+    subtitle: 'Third Eye Society has already partnered with the WeedPunks project to purchase a plot in Sandbox.',
     icon: (
       <svg
         height={24}

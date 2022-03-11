@@ -33,24 +33,24 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
           display={'flex'}
           component="a"
           href="/"
-          title="theFront"
+          title="Third Eye Society"
           width={{ xs: 100, md: 120 }}
         >
           <Box
             component={'img'}
             src={
-              mode === 'dark'
-                ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/86f01e4a-c777-4f7c-ac73-d6d9ac4ba900/public'
-                : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
+              mode === 'light'
+                ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/ffeff217-f527-4d4c-c9bf-b500006eb800/public'
+                : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/4acc6e55-8057-42f1-bb6a-87a850d9bc00/public'
             }
-            height={1}
-            width={1}
+            height={'100%'}
+            width={'225%'}
           />
         </Box>
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Home'} items={landingPages} />
+          <NavItem  title={'Home'} items={landingPages} />
         </Box>
         <Box>
           <NavItem title={'About'} items={companyPages} />
@@ -65,10 +65,10 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
         <Box marginTop={2}>
           <Button
             size={'large'}
-            variant="outlined"
+            variant="contained"
             fullWidth
             component="a"
-            href=""
+            href="https://mint.thirdeyesociety.io"
           >
             Mint
           </Button>

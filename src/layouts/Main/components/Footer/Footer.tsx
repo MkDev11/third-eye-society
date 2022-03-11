@@ -30,7 +30,7 @@ const Footer = (): JSX.Element => {
             <Box
               component={'img'}
               src={
-                mode === 'dark'
+                mode === 'light'
                   ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/86f01e4a-c777-4f7c-ac73-d6d9ac4ba900/public'
                   : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/8f298982-0934-4ce7-d83f-788ad0f5e700/public'
               }

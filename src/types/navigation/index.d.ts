@@ -4,4 +4,5 @@ interface PageItem {
   id?: string | number;
   href: string;
   target?: string;
+  link?: string;
 }

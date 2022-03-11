@@ -43,17 +43,17 @@ const Topbar = ({
         component="a"
         href="/"
         title="Third Eye Society"
-        width={{ xs: 100, md: 120 }}
+        width={{ xs: 100, md: 100 }}
       >
         <Box
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/e95bc9a1-6fad-4280-40b1-812f79f05500/public'
+              ? 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/ffeff217-f527-4d4c-c9bf-b500006eb800/public'
               : 'https://imagedelivery.net/9PTGu0HbkQc8QazDcIVWeA/4acc6e55-8057-42f1-bb6a-87a850d9bc00/public'
           }
           height={'200%'}
-          width={'200%'}
+          width={'250%'}
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
@@ -98,6 +98,8 @@ const Topbar = ({
             target="blank"
             href='https://mint.thirdeyesociety.io'
             size="large"
+            border-radius="10"
+            
           >
             Mint
           </Button>

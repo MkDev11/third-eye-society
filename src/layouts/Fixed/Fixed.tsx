@@ -7,7 +7,6 @@ import AppBar from '@mui/material/AppBar';
 
 import Container from 'components/Container';
 import { Topbar, Footer } from './components';
-import pages from '../navigation--docs';
 
 interface Props {
   children: React.ReactNode;
