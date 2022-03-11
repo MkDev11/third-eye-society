@@ -8,7 +8,7 @@ const pages = {
   team: [
     {
       title: 'Benefits',
-      href: '/Mission',
+      href: '',
     },
     {
       title: 'RoadMap',
