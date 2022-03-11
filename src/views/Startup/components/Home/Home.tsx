@@ -110,7 +110,7 @@ const Hero = (): JSX.Element => {
       >
         <Box
           component={LazyLoadImage}
-          src={'https://storageapi.fleek.co/fb1bc31d-b8ac-4156-ab04-d0b390a62da3-bucket/TEAS Site Images/Banner Top.png'}
+          src={'https://storageapi.fleek.co/fb1bc31d-b8ac-4156-ab04-d0b390a62da3-bucket/TEAS Site Images/Banner Tops.png'}
           height={{ xs: 'auto', md: 1 }}
           maxHeight={{ xs: 200, md: 1 }}
           width={'95%'}
