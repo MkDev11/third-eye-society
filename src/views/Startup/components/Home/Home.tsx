@@ -73,7 +73,7 @@ const Hero = (): JSX.Element => {
       <Typography variant="h5" component="p" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
       to wealth and wisdom for all Apes
       </Typography>
-      <Button component="span" variant="contained" color="primary" size="large" href='https://mint.thirdeyesociety.io' text-align={'center'} justify-content={'center'} align-items={'center'}  sx={{ textShadow:'2px 2px #2F4F4F',
+      <Button component={'a'} variant={'contained'} color={'primary'} size={'large'} href={'https://mint.thirdeyesociety.io'} sx={{ textShadow:'2px 2px #2F4F4F',
         padding: 'relative',
         width:'66%',
         borderBottom:'hidden',
@@ -85,7 +85,7 @@ const Hero = (): JSX.Element => {
           0.4,
         )} 0%)`,
       }} >
-        <Typography variant="h5" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
+        <Typography variant="h5" color={'#F8F8FF'} position={'relative'}  text-align={'Center'}  >
         Mint
         </Typography>
       </Button>
@@ -95,10 +95,11 @@ const Hero = (): JSX.Element => {
   const RightSide = (): JSX.Element => {
     return (
       <Box
+        position={'sticky'}
         sx={{
           height: { xs: 'auto', md: 1 },
           '& img': {
-            objectFit: 'scale-down',
+            objectFit: 'contain',
           },
           '& .lazy-load-image-loaded': {
             height: 1,
@@ -184,9 +185,7 @@ const Hero = (): JSX.Element => {
               alignItems={'center'}
             >
               <Container>
-                <LeftSide  
-                  
-                  align-items={'center'} />
+                <LeftSide/>
               </Container>
             </Box>
             <Box
@@ -228,7 +227,7 @@ const Hero = (): JSX.Element => {
                       },
                     }}
                   >
-                    <RightSide align-items={RightSide}/>
+                    <RightSide />
                   </Box>
                 </Box>
               </Box>
