@@ -68,7 +68,7 @@ const Hero = (): JSX.Element => {
           fontWeight: '700',
           
         }}>
-      04/04/2022 
+      03/28/2022 
       </Typography>
       <div> </div>
       <Typography variant="h5" component="p" color={'#F8F8FF'} position={'relative'}  text-align={'Center'} >
